@@ -1,0 +1,233 @@
+<html>
+    <head>
+        <link href="style.css" ref="stylesheet" />
+<title>SamAPP log in page</title>
+    </head>
+    <style>
+        .signup_box{
+            border: 2px solid black;
+            width: 400px;
+            position: absolute;
+            left: 36%;
+            border-radius: 80px 5px 10px 25px;
+            box-shadow: 3px 3px 3px 3px rgb(15, 42, 54); 
+
+            /* this will change the border radius to 30px */
+            
+        }
+body {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px;
+    font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+    background: linear-gradient(rgb(7, 245, 193), #070707);
+}
+h1 {
+    font-size: 75px;
+    color: rgb(172, 253, 10);
+    text-align: center;
+    background-color: rgb(36, 78, 36);
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    margin-top: 50px;
+    border-radius: 50px;
+    width: 500px;
+    margin-left: 450px;
+}
+
+h1:hover{
+    background-color: rgb(250, 244, 244);
+    color: rgb(18, 18, 19);
+}
+h3 {
+    color: rgb(19, 5, 148);
+    margin-top: 20px;
+}
+
+.footer_wrapper{
+    position: left;
+    background-color: rgb(244, 247, 245);
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    margin-top: 405px;
+    height: 45px;
+
+}
+
+.bottom_footer{
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    width: 500px;
+    height: 50px;
+    color:#fff;
+    background: #000;
+    height: 20px;
+    border-radius: 50%;
+    margin-left: 35%;
+}
+.div1 [type="submit"] {
+    color: black;
+}
+
+.logo{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: absolute;
+    top:5px;
+    left:650px;
+}
+
+.email{
+    width: 220px;
+    height: 25px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+}
+.fullname{
+    width: 220px;
+    height: 25px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+}
+.othername{
+    width: 220px;
+    height: 25px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding-left: 10px
+}
+.password{
+    width: 220px;
+    height: 25px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding-left: 10px
+}
+.confirm-password{
+    width: 220px;
+    height: 25px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding-left: 10px
+}
+.app_name.app_name:first-letter{
+    color: rgb(253, 8, 8);
+}
+.signup{
+    width: 70px;
+    height: 25px;
+    border-radius: 10px;
+
+}
+@keyframes changeBack {
+    0% 
+    {
+        background: rgba(65, 199, 116, 0.822);
+        position: absolute;
+        bottom: 0px;
+
+    } 
+
+
+    10%{
+        position: absolute;
+        bottom: 20px;
+        background-color: blue;
+    }
+
+20%{
+    background-color: black;
+    position: absolute;
+        bottom: 50px;
+}
+
+
+100%{
+    background-color: green;
+   
+}
+
+}
+h3.mar{
+    color: rgb(238, 238, 238);
+    margin-top: 20%;
+
+}
+
+    </style>
+
+
+
+   <body> 
+       <div>
+        <h1 class="app_name" id="appName">SamAPP</h1>
+
+
+
+        <img class="logo" src="./Assest/logo.jpg"/>
+       </div>
+
+       <div class="signup_box">
+
+       <h3>Create an account</h3>
+       <p>It's free and always be</p>
+       <div
+       class="div1">
+       <form action="./Pages/signup.html" method="POST">
+
+           <li><input type="text" name="email" class="email" placeholder="Email or Phone no"></li>
+           <p><li><input type="text" name="fullName" class="fullname" placeholder="Firstname/Surname"></li></p>
+          <p><li><input type="text" name="otherName" class="othername" placeholder="Other names"></li></p>
+           <p><li><input type="password" name="password" class="password" placeholder="Password"></li></p>
+
+           <p><li><input type="password" name="password" class="confirm-password" placeholder="Confirm Password"></li></p>
+
+           <p><input type="submit" name="Log in" class="signup"  value="Sign up"></p>
+       </form>
+       </div>
+        
+       </div>
+       <div class="footer_wrapper">
+        <div id="header 1">
+         English (UK)
+         </div>
+        <a href="#" > Sign up</a>
+        <a href="#">Log in</a>
+        <a href="#"> Mobile</a>
+       </div>
+       <div class="bottom_footer">
+           &copy SamAPP 2021
+       </div>
+       <div class="above_footer">
+    </div>
+
+   
+    <marquee>
+        <h3 class="mar">You dey enter my eyes</h3>
+    </marquee>
+    <script>
+        var h1 = document.getElementsByClassName('app_name');
+  
+  for(var i = 0; i < h1.length; i++)
+  {
+      var text = h1[i].textContent;
+    //   h1[i].innerHTML = text.replace('m','<span style="color:green; font-size:70px">m</span>');
+  }
+          </script>
+    </body>
+
+
+  
+
+</html>

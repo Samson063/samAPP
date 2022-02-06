@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <button onclick="myfun()">tap me </button>
+        <input type="text" id="input">
+        <h1 id="color"></h1>
+        <script>
+            function myfun(){
+            let me = Math.floor(Math.random()*999999);
+            document.getElementById("color").innerHTML='#'+me;
+            document.body.style.backgroundColor = me;
+            }
+
+            let inp = document.getElementById("input");
+            inp.addEventListener(onchange, function(){
+                document.body.style.backgroundColor = inp;
+                
+            });
+            
+        </script>
+    </body>
+</html>
